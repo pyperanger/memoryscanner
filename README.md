@@ -6,3 +6,7 @@ To run this sample you just need to load the DLL with LoadLibrary call and the s
 ```
 HINSTANCE hProc = LoadLibrary(".\\memoryscanner.dll");
 ```
+
+<p align="center">
+<img src="Output.PNG"/>
+</p>
