@@ -39,12 +39,6 @@ int count(
     return CALLBACK_CONTINUE;
 }
 
-static inline BOOL InBlock(PVOID BaseAddress, SIZE_T BlockSize, PVOID Address) {
-    if (BaseAddress < Address && (unsigned long long) Address < (uintptr_t)BaseAddress + BlockSize)
-        return TRUE;
-    return FALSE;
-}
-
 void Scanner(void* data) {
     const char RuleStr[] =
         "rule RuleName : ruler"
